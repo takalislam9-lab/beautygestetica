@@ -61,3 +61,10 @@ document.addEventListener('keydown', e => {
   document.body.style.overflow = '';
   nav.classList.remove('open');
 });
+
+// Beauty G: tarjetas de servicios que se dan la vuelta
+document.querySelectorAll('.svc-static:not(.nofl)').forEach(function (c) {
+  function flip() { c.classList.toggle('flipped'); }
+  c.addEventListener('click', flip);
+  c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
+});
