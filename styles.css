@@ -238,3 +238,20 @@ footer a:hover{color:var(--gold);}
 .logo-mark{width:46px;height:46px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:'Cormorant Upright',serif;font-size:1.4rem;box-shadow:0 0 0 3px var(--tint);}
 .brands{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px;}
 .brands span{border:1px solid var(--line);border-radius:30px;padding:8px 18px;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);background:var(--paper);}
+
+/* Beauty G: tarjetas fijas de servicios y galerÃ­a uniforme */
+.svc-static-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1150px;margin:0 auto;}
+.svc-static{position:relative;border-radius:16px;overflow:hidden;height:340px;background:var(--tint);}
+.svc-static img{width:100%;height:100%;object-fit:cover;}
+.svc-static::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(28,22,20,.85) 0%,rgba(28,22,20,.15) 55%,transparent 100%);}
+.svc-static h3{position:absolute;left:0;right:0;bottom:0;margin:0;padding:24px;color:#fff;font-size:1.45rem;z-index:2;}
+.gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:340px;}
+.gallery .big{grid-column:auto;grid-row:auto;}
+@media (max-width:900px){
+  .svc-static-grid{grid-template-columns:1fr 1fr;gap:18px;}
+  .svc-static{height:260px;}
+  .gallery{grid-template-columns:1fr;grid-auto-rows:300px;}
+}
+@media (max-width:560px){
+  .svc-static-grid{grid-template-columns:1fr;}
+}

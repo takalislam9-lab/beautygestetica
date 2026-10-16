@@ -13,7 +13,7 @@
 
 <header id="header" class="scrolled">
   <a href="index.html" class="logo" aria-label="Beauty G Estética Avanzada, inicio"><span class="logo-mark">G</span><span class="logo-text"><span class="script">Beauty G</span><small>estética avanzada</small></span></a>
-  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="index.html#servicios">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
 </header>
 
 <div class="page-hero">
@@ -22,103 +22,18 @@
   <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
 </div>
 
-<div class="tabs">
-  <button class="tab-btn active" data-tab="facial">Faciales</button>
-  <button class="tab-btn" data-tab="corporal">Corporales</button>
-  <button class="tab-btn" data-tab="relajantes">Relajantes</button>
-  <button class="tab-btn" data-tab="laser">Láser diodo</button>
-  <button class="tab-btn" data-tab="manos">Manicura y pedicura</button>
-  <button class="tab-btn" data-tab="micro">Micropigmentación</button>
-  
-</div>
-
-<div class="tab-panel active" id="facial">
-  <div class="tab-intro"><span class="script">Piel</span><h2>Tratamientos faciales</h2><p>Una piel luminosa y cuidada.</p></div>
-  <div class="cat-grid single">
-    <div class="cat-card" onclick="openModal('facial')"><img src="us_facial.jpg" alt="Tratamientos faciales" loading="lazy"><div class="cat-card-text"><h3>Tratamientos faciales</h3><span>Ver servicios</span></div></div>
+<section>
+  <div class="svc-static-grid">
+    <div class="svc-static"><img src="us_facial.jpg" alt="Tratamientos faciales" loading="lazy"><h3>Tratamientos faciales</h3></div>
+    <div class="svc-static"><img src="us_corporal.jpg" alt="Tratamientos corporales" loading="lazy"><h3>Tratamientos corporales</h3></div>
+    <div class="svc-static"><img src="local_cabina.jpg" alt="Tratamientos relajantes" loading="lazy"><h3>Tratamientos relajantes</h3></div>
+    <div class="svc-static"><img src="us_laser.jpg" alt="DepilaciÃ³n lÃ¡ser diodo Â· mujer y hombre" loading="lazy"><h3>DepilaciÃ³n lÃ¡ser diodo Â· mujer y hombre</h3></div>
+    <div class="svc-static"><img src="us_manos.jpg" alt="Manicura y pedicura" loading="lazy"><h3>Manicura y pedicura</h3></div>
+    <div class="svc-static"><img src="us_micro.jpg" alt="MicropigmentaciÃ³n y microblading" loading="lazy"><h3>MicropigmentaciÃ³n y microblading</h3></div>
   </div>
-</div>
-
-<div class="tab-panel" id="corporal">
-  <div class="tab-intro"><span class="script">Cuerpo</span><h2>Tratamientos corporales</h2><p>Cuida y moldea tu figura.</p></div>
-  <div class="cat-grid single">
-    <div class="cat-card" onclick="openModal('corporal')"><img src="us_corporal.jpg" alt="Tratamientos corporales" loading="lazy"><div class="cat-card-text"><h3>Tratamientos corporales</h3><span>Ver servicios</span></div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="relajantes">
-  <div class="tab-intro"><span class="script">Relax</span><h2>Tratamientos relajantes</h2><p>Un momento solo para ti.</p></div>
-  <div class="cat-grid single">
-    <div class="cat-card" onclick="openModal('relajantes')"><img src="local_cabina.jpg" alt="Tratamientos relajantes" loading="lazy"><div class="cat-card-text"><h3>Tratamientos relajantes</h3><span>Ver servicios</span></div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="laser">
-  <div class="tab-intro"><span class="script">Suave</span><h2>Depilación láser diodo</h2><p>Para mujer y hombre.</p></div>
-  <div class="cat-grid single">
-    <div class="cat-card" onclick="openModal('laser')"><img src="us_laser.jpg" alt="Depilación láser diodo · mujer y hombre" loading="lazy"><div class="cat-card-text"><h3>Depilación láser diodo · mujer y hombre</h3><span>Ver servicios</span></div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="manos">
-  <div class="tab-intro"><span class="script">Manos</span><h2>Manicura y pedicura</h2><p>Manos y pies perfectos.</p></div>
-  <div class="cat-grid single">
-    <div class="cat-card" onclick="openModal('manos')"><img src="us_manos.jpg" alt="Manicura y pedicura" loading="lazy"><div class="cat-card-text"><h3>Manicura y pedicura</h3><span>Ver servicios</span></div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="micro">
-  <div class="tab-intro"><span class="script">Mirada</span><h2>Micropigmentación y microblading</h2><p>Cejas definidas y naturales.</p></div>
-  <div class="cat-grid single">
-    <div class="cat-card" onclick="openModal('micro')"><img src="us_micro.jpg" alt="Micropigmentación y microblading" loading="lazy"><div class="cat-card-text"><h3>Micropigmentación y microblading</h3><span>Ver servicios</span></div></div>
-  </div>
-</div>
-
+</section>
 
 <p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34667327959" target="_blank" rel="noopener" style="color:var(--red)">667 32 79 59</a> y te asesoramos sin compromiso.</p>
-
-<div class="modal-overlay" id="modal-facial"><div class="modal">
-  <button class="modal-close" onclick="closeModal('facial')" aria-label="Cerrar">×</button>
-  <h3>Tratamientos faciales</h3><p class="modal-sub">Faciales</p>
-  <div class="svc-row"><div><div class="svc-name">Tratamientos faciales</div><span class="svc-desc">Tratamientos faciales adaptados a tu piel. Te asesoramos para elegir el que mejor te va.</span></div><div class="svc-price">Consultar</div></div>
-  <a class="modal-cta alt" href="https://wa.me/34667327959?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20faciales" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
-</div></div>
-
-<div class="modal-overlay" id="modal-corporal"><div class="modal">
-  <button class="modal-close" onclick="closeModal('corporal')" aria-label="Cerrar">×</button>
-  <h3>Tratamientos corporales</h3><p class="modal-sub">Corporales</p>
-  <div class="svc-row"><div><div class="svc-name">Tratamientos corporales</div><span class="svc-desc">Tratamientos corporales personalizados según tu objetivo.</span></div><div class="svc-price">Consultar</div></div>
-  <a class="modal-cta alt" href="https://wa.me/34667327959?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20corporales" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
-</div></div>
-
-<div class="modal-overlay" id="modal-relajantes"><div class="modal">
-  <button class="modal-close" onclick="closeModal('relajantes')" aria-label="Cerrar">×</button>
-  <h3>Tratamientos relajantes</h3><p class="modal-sub">Relajantes</p>
-  <div class="svc-row"><div><div class="svc-name">Tratamientos relajantes</div><span class="svc-desc">Tratamientos relajantes para desconectar y liberar tensiones.</span></div><div class="svc-price">Consultar</div></div>
-  <a class="modal-cta alt" href="https://wa.me/34667327959?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20relajantes" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
-</div></div>
-
-<div class="modal-overlay" id="modal-laser"><div class="modal">
-  <button class="modal-close" onclick="closeModal('laser')" aria-label="Cerrar">×</button>
-  <h3>Depilación láser diodo · mujer y hombre</h3><p class="modal-sub">Láser diodo</p>
-  <div class="svc-row"><div><div class="svc-name">Depilación láser diodo · mujer y hombre</div><span class="svc-desc">Depilación con láser de diodo para mujer y hombre. Consúltanos zonas y bonos.</span></div><div class="svc-price">Consultar</div></div>
-  <a class="modal-cta alt" href="https://wa.me/34667327959?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20diodo%20%C2%B7%20mujer%20y%20hombre" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
-</div></div>
-
-<div class="modal-overlay" id="modal-manos"><div class="modal">
-  <button class="modal-close" onclick="closeModal('manos')" aria-label="Cerrar">×</button>
-  <h3>Manicura y pedicura</h3><p class="modal-sub">Manicura y pedicura</p>
-  <div class="svc-row"><div><div class="svc-name">Manicura y pedicura</div><span class="svc-desc">Manicura y pedicura para lucir unas manos y unos pies cuidados.</span></div><div class="svc-price">Consultar</div></div>
-  <a class="modal-cta alt" href="https://wa.me/34667327959?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20manicura%20y%20pedicura" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
-</div></div>
-
-<div class="modal-overlay" id="modal-micro"><div class="modal">
-  <button class="modal-close" onclick="closeModal('micro')" aria-label="Cerrar">×</button>
-  <h3>Micropigmentación y microblading</h3><p class="modal-sub">Micropigmentación</p>
-  <div class="svc-row"><div><div class="svc-name">Micropigmentación y microblading</div><span class="svc-desc">Micropigmentación y microblading para unas cejas definidas y naturales.</span></div><div class="svc-price">Consultar</div></div>
-  <a class="modal-cta alt" href="https://wa.me/34667327959?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20micropigmentaci%C3%B3n%20y%20microblading" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
-</div></div>
-
 
 <footer>
   <div class="footer-bottom" style="margin-top:0">
