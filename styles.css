@@ -275,3 +275,22 @@ footer a:hover{color:var(--gold);}
   .svc-static-grid{grid-template-columns:1fr;}
   .gallery{grid-template-columns:1fr;grid-auto-rows:320px;}
 }
+/* Cambios de Geta 19/10 */
+.hero-text p{margin-bottom:16px;}
+.hero-text .hero-lead{font-size:1.15rem;color:var(--ink);font-weight:500;}
+.hero-text .hero-accent{font-family:'Cormorant Upright',serif;font-size:1.6rem;color:var(--red);font-weight:600;margin-bottom:30px;}
+.trust .section-head{max-width:760px;}
+.trust .section-head p{margin-top:12px;}
+.trust .section-head .philo-accent{font-family:'Cormorant Upright',serif;font-size:1.5rem;color:var(--red);font-weight:600;}
+.trust-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));max-width:1250px;gap:30px;}
+.trust-card p + p{margin-top:8px;}
+.trust-card .trust-sub{color:var(--red);font-weight:500;}
+.gallery-wrap .section-head{max-width:720px;}
+.gallery-wrap .section-head .gal-addr{color:var(--ink);font-weight:500;}
+.gal-cta{text-align:center;margin:34px 0 10px;}
+.svc-cta .svc-cta-title{font-family:'Cormorant Upright',serif;font-size:clamp(1.7rem,3.5vw,2.3rem);color:var(--dark);margin:0 0 14px;}
+.svc-cta p{font-size:1.05rem;margin:0 0 12px;line-height:1.7;}
+.svc-cta .svc-cta-strong{font-weight:600;margin-bottom:22px;}
+.cta-section.closing{background:var(--tint);}
+.cta-section.closing p{max-width:620px;margin:0 auto 28px;line-height:1.8;}
+.cta-section.closing .closing-sign{margin:30px auto 0;color:var(--red);font-weight:600;letter-spacing:1px;}
